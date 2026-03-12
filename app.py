@@ -27,7 +27,7 @@ with st.sidebar:
                ) 
 
 with st.expander('Analizar texto'):
-    text = st.text_input('Escribe por favor: ')
+    text = st.text_input('Escribe lo que sientes: ')
     if text:
 
         translation = translator.translate(text, src="es", dest="en")
