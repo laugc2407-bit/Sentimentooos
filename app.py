@@ -3,11 +3,14 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 from googletrans import Translator
+from streamlit_lottie import st_lottie
+import json
 
-st.title('Análisis de Sentimiento')
-image = Image.open('Cat playing animation.json')
-st.image(image)
-st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
+
+st.title('Análisis de Sentimientooos')
+with open('Cat playing animation.json') as source
+     animation=json.load(source)
+st.lottie(animation,width =350)
 
 translator = Translator()
 
