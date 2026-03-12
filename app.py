@@ -8,7 +8,7 @@ import json
 
 
 st.title('Análisis de Sentimientooos')
-with open('Cat playing animation.json') as source
+with open('Cat playing animation.json') as source:
      animation=json.load(source)
 st.lottie(animation,width =350)
 
