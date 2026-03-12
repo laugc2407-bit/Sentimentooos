@@ -45,12 +45,12 @@ with st.expander('Analizar texto'):
 
         elif x >=-1 and x <= 0:
             st.write( 'Es un sentimiento Negativo 😔')
-            with open('Dance cat.json') as source:
+            with open('Cat_in_Box.json') as source:
                  animation=json.load(source)
             st.lottie(animation,width =350)
 
         else:
           st.write( 'Es un sentimiento Neutral 😐')
-          with open('Dance cat.json') as source:
+          with open('cat Mark loading.json') as source:
                animation=json.load(source)
           st.lottie(animation,width =350)
